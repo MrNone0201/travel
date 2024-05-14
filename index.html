@@ -1,0 +1,785 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<link rel="stylesheet" href="icons/css/all.css">
+	<link rel="stylesheet" type="text/css" href="bootstrap/css/bootstrap.min.css">
+	<title>Travel</title>
+</head>
+<body>
+<div class="navbar">
+	<div class="logo">
+		<img src="Logos/MainLogo.png" alt="">
+		<h1><span style="color: blue;">T</span>ravel</h1>
+	</div>
+	<div class="menu">
+		<ul>
+			<li data-text="Home">Home</li>
+			<li data-text="Top Destination">Top Destination</li>
+			<li data-text="Recomended Places">Recomended Places</li>
+			<li data-text="Contact Us">Contact Us</li>
+		</ul>
+	</div>
+	<div class="phone_Menu" onclick="openMenu()">
+		<span >&#9776;</span>
+		<ul id="menu_Phone">
+			<li data-text="Home">Home</li>
+			<li data-text="Top Places">Top Places</li>
+			<li data-text="Top Coteges">Top Coteges</li>
+			<li data-text="Contact Us">Contact Us</li>
+		</ul>
+		
+	</div>
+</div>
+
+<div class="sectionOne">
+	<div class="sectionOneMain">
+		<div class="beginTravel">
+			<h1>Let's begin</h1>
+			<div class="radio"></div>
+			<div class="radio"></div>
+			<div class="radio"></div>
+			<h2>We assist you to choose the best.</h2>
+				<div class="start" onclick="openSelect()">
+					<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+					<lord-icon
+					    src="https://cdn.lordicon.com/albqovim.json"
+					    trigger="hover"
+					    colors="primary:#4030e8"
+					    style="width:50px;height:50px">
+					</lord-icon>
+				</div>
+				<div class="closeSelect" onclick="closeSelect()">
+					<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+						<lord-icon
+						    src="https://cdn.lordicon.com/jfhbogmw.json"
+						    trigger="hover"
+						    colors="primary:#2516c7"
+						    style="width:50px;height:50px">
+						</lord-icon>
+				</div>
+		</div>
+		<div class="selectMenu">	
+			<form action="" class="selectForm">
+					<div class="selectInp">
+						<div>
+							<label for="choose">Chosse Your Destination</label>
+								<input type="text" class="choose" placeholder="Type you destination">
+						</div>
+						<div>
+							<label for="room">How many rooms?</label>
+								<select name="" class="room">
+									<option>Room 1</option>
+									<option>Room 2</option>
+									<option>Room 3</option>
+									<option>Room 4</option>
+									<option>Room 5</option>
+								</select>
+						</div>
+						<div>
+							<label for="adult">Adult</label>
+								<select name="" class="adult">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+								</select>
+						</div>
+						<div>
+							<label for="children">Children</label>
+								<select name="" class="children">
+									<option>0</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+								</select>
+						</div>
+					</div>
+					<div class="selectInpTwo">
+							<div>
+								<label for="checkIn">Cheack In Date</label>
+									<input type="date" value="" class="checkin" placeholder="Check in">
+							</div>
+							<div>
+								<label for="checkOut">Vheck Out Date</label>
+									<input type="date" class="checkOut" placeholder="Check out">
+							</div>
+						<button>CHECK AVAILBILITY</button>
+					</div>
+			</form>
+		</div>
+	</div>	
+</div>
+
+<div class="sectionOnePhone">
+	<div class="sectionOneMainPhone">
+		<div class="beginTravelPhone">
+			<h1>Let's begin</h1>
+			<div class="radioPhone"></div>
+			<div class="radioPhone"></div>
+			<div class="radioPhone"></div>
+			<h2>We assist you to choose the best.</h2>
+				<div class="startPhone" onclick="openSelectP()">
+					<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+					<lord-icon
+					    src="https://cdn.lordicon.com/albqovim.json"
+					    trigger="hover"
+					    colors="primary:#4030e8"
+					    style="width:40px;height:40px">
+					</lord-icon>
+				</div>
+				<div class="closeSelectPhone" onclick="closeSelectP()">
+					<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+						<lord-icon
+						    src="https://cdn.lordicon.com/jfhbogmw.json"
+						    trigger="hover"
+						    colors="primary:#2516c7"
+						    style="width:40px;height:40px">
+						</lord-icon>
+				</div>
+		</div>
+		<div class="selectMenuPhone">	
+			<form action="" class="selectFormPhone">
+					<div class="selectInpPhone">
+						<div>
+							<label for="choosePhone">Chosse Your Destination</label>
+								<input type="text" class="choosePhone" placeholder="Type you destination">
+						</div>
+						<div>
+							<label for="roomPhone">How many rooms?</label>
+								<select name="" class="roomPhone">
+									<option>Room 1</option>
+									<option>Room 2</option>
+									<option>Room 3</option>
+									<option>Room 4</option>
+									<option>Room 5</option>
+								</select>
+						</div>
+						<div>
+							<label for="adultPhone">Adult</label>
+								<select name="" class="adultPhone">
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+								</select>
+						</div>
+						<div>
+							<label for="childrenPhone">Children</label>
+								<select name="" class="childrenPhone">
+									<option>0</option>
+									<option>1</option>
+									<option>2</option>
+									<option>3</option>
+									<option>4</option>
+									<option>5</option>
+									<option>6</option>
+									<option>7</option>
+								</select>
+						</div>
+					</div>
+					<div class="selectInpTwoPhone">
+							<div>
+								<label for="checkInPhone">Cheack In Date</label>
+									<input type="date" value="" class="checkinPhone" placeholder="Check in">
+							</div>
+							<div>
+								<label for="checkOutPhone">Vheck Out Date</label>
+									<input type="date" class="checkOutPhone" placeholder="Check out">
+							</div>
+						<button>CHECK AVAILBILITY</button>
+					</div>
+			</form>
+		</div>
+	</div>	
+</div>
+
+<div class="sectionTwo">
+	<h1>YOUR <b>JOURNEY</b> IS OUR PRIORITY</h1>
+	<p>Nullam auctor, sapien sit amet lacinia euismod, lorem magna lobortis massa, in tincidunt mi metus quis lectus. Duis nec lobortis velit. Vivamus id magna vulputate, tempor ante eget, tempus augue. Maecenas ultricies neque magna.</p>
+	<button>CONTINUE EXPLORE</button>
+</div>
+<div id="sectionThree">
+	<div class="row">
+		<div id="photo">
+			<img src="Photos/Garni/Tachar.jpg" alt="">
+			<img src="Photos/Garni/Get.jpg" alt="">
+			<img src="Photos/Garni/Ekexeci.jpg" alt="">
+		</div>
+		<div class="text">
+			<div class="toLeft" onclick="firstLeft()">
+				<i class="fa-solid fa-caret-left"></i>
+			</div>
+			<div class="toRight" onclick="firstRight()">
+				<i class="fa-solid fa-caret-right"></i>
+			</div>
+			<h1>Garni's most visited places</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quibusdam aliquid, veritatis saepe corporis perspiciatis rem harum ad impedit accusamus ab natus fuga iusto sequi cumque molestias tenetur obcaecati! Porro aperiam rerum aut quidem molestiae qui ratione vero enim, possimus architecto.</p>
+		</div>
+	</div>
+	<div class="rowTwo">
+		<div id="photoTwo">
+			<img src="Photos/Lori/Dzoraget.jpg" alt="">
+			<img src="Photos/Lori/Ekexeci.jpg" alt="">
+			<img src="Photos/Lori/EkexeciErku.jpg" alt="">
+		</div>
+		<div class="textTwo">
+			<div class="toLeftTwo" onclick="seccondLeft()">
+				<i class="fa-solid fa-caret-left"></i>
+			</div>
+			<div class="toRightTwo" onclick="seccondRight()">
+				<i class="fa-solid fa-caret-right"></i>
+			</div>
+			<h1>Lori's most visited places</h1>
+			<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus ut quasi perspiciatis maiores aspernatur, id unde architecto itaque culpa iste asperiores ducimus recusandae cumque molestiae labore est omnis hic quas? Inventore voluptates sint aut sit perspiciatis, ab soluta tempore molestiae!</p>
+		</div>
+	</div>
+	<div class="rowThree">
+		<div id="photoThree">
+			<img src="Photos/Syuniq/Shinuayr.jpg" alt="">
+			<img src="Photos/Syuniq/Sarer.jpg" alt="">
+			<img src="Photos/Syuniq/Ekexeci.jpg" alt="">
+		</div>
+		<div class="textThree">
+			<div class="toLeftThree" onclick="thirdLeft()">
+				<i class="fa-solid fa-caret-left"></i>
+			</div>
+			<div class="toRightThree" onclick="thirdRight()">
+				<i class="fa-solid fa-caret-right"></i>
+			</div>
+			<h1>Syuniq's most visited places</h1>
+			<p>Lorem ipsum dolor sit amet, consectetur adipisicing, elit. Sapiente, minima consequatur vel quibusdam voluptatum explicabo consequuntur cupiditate dolores ea numquam molestias? Ratione, tenetur reprehenderit libero culpa quam repellat, et sit ipsum quis deserunt? Sapiente fugiat vitae excepturi nisi, et pariatur.</p>
+		</div>
+	</div>
+</div>
+<div class="placesMenu">
+	<div class="photoMap" onclick="mapOne()" onclick="phonemapOne()">
+		<img src="Map/yerevan.png" alt="">
+		<h4>Yerevan</h4></div>
+	<div class="photoMap" onclick="mapTwo()" onclick="phonemapTwo()">
+		<img src="Map/aragatsotn.png" alt="">
+		<h4>Aragatsotn</h4></div>
+	<div class="photoMap" onclick="mapThree()" onclick="phonemapThree()">
+		<img src="Map/ararat.png" alt="">
+		<h4>Ararat</h4></div>
+	<div class="photoMap" onclick="mapFour()" onclick="phonemapFour()">
+		<img src="Map/armavir.png" alt="">
+		<h4>Armavir</h4></div>
+	<div class="photoMap" onclick="mapFive()" onclick="phonemapFive()">
+		<img src="Map/gegarkunik.png" alt="">
+		<h4>Gegharkunik</h4></div>
+	<div class="photoMap" onclick="mapSix()" onclick="phonemapSix()">
+		<img src="Map/kotayk.png" alt="">
+		<h4>Kotayk</h4></div>
+	<div class="photoMap" onclick="mapSeven()" onclick="phonemapSeven()">
+		<img src="Map/lori.png" alt="">
+		<h4>Lori</h4></div>
+	<div class="photoMap" onclick="mapEight()" onclick="phonemapEight()">
+		<img src="Map/shirak.png" alt="">
+		<h4>Shirak</h4></div>
+	<div class="photoMap" onclick="mapNine()" onclick="phonemapNine()">
+		<img src="Map/syunik.png" alt="">
+		<h4>Syunik</h4></div>
+	<div class="photoMap" onclick="mapTen()" onclick="phonemapTen()">
+		<img src="Map/tavush.png" alt="">
+		<h4>Tavush</h4></div>
+	<div class="photoMap" onclick="mapEleven()" onclick="phonemapEleven()">
+		<img src="Map/vayocdzor.png" alt="">
+		<h4>Vayots dzor</h4></div>
+</div>
+<div class="sectionFour">
+<div class="openPlacesMenu" onclick="placesMenu()">
+	<script src="https://cdn.lordicon.com/ritcuqlt.js"></script>
+<lord-icon
+    src="https://cdn.lordicon.com/zmkotitn.json"
+    trigger="hover"
+    colors="primary:#ffffff"
+    style="width:50px;height:50px">
+</lord-icon>
+</div>
+	<div class="forYerevan">
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/1.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Yerevan's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/2.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Yerevan's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/3.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Yerevan's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/4.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Yerevan's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+	</div>
+
+
+
+
+	<div class="forAragatsotn">
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/5.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Aragatsotn's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/6.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Aragatsotn's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/7.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Aragatsotn's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/8.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Aragatsotn's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="forArarat">
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/9.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Ararat's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/10.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Ararat's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/11.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Ararat's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/12.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Ararat's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="forArmavir">
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/13.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Armavir's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/14.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Armavir's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/15.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Armavir's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/16.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Armavir's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="forGegharkunik">
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/17.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Gegharkunik's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/18.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Gegharkunik's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/19.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Gegharkunik's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/20.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Gegharkunik's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+
+	<div class="forKotayk">
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/21.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Kotayk's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/22.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Kotayk's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/23.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Kotayk's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/24.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Kotayk's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+	<div class="forLori">
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/25.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Lori's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/26.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Lori's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/27.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Lori's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/28.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Lori's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="forShirak">
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/29.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Shirak's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/30.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Shirak's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/31.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Shirak's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/32.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Shirak's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+	<div class="forSyunik">
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/33.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Syunik's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/34.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Syunik's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/35.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Syunik's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/36.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Syunik's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="forTavush">
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/37.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Tavush's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/38.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Tavush's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/39.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Tavush's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/40.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Tavush's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+	</div>
+
+
+
+
+
+
+
+
+
+	<div class="forVayocDzor">
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/41.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Vayoc Dzor's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/42.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Vayoc Dzor's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/43.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Vayoc Dzor's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+		<div class="rowDiv">
+			<div class="photo"><img src="topPhotos/44.jpeg" alt=""></div>
+			<div class="textDiv">
+				<h1>Vayoc Dzor's top visited places</h1>
+				<p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, sint cupiditate eaque perferendis dolorum, rerum esse voluptas quisquam consectetur explicabo reprehenderit possimus a molestiae quis voluptates cum modi numquam officia.</p>
+			</div>
+			<div class="buy"><h1>Buy</h1><h2>500%</h2></div>
+		</div>
+	</div>
+</div>
+
+<div class="forMap">
+<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1562308.6607046386!2d44.73807733131011!3d40.1114428352442!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x40155684e773bac7%3A0xd0b4757aeb822d23!2z0JDRgNC80LXQvdC40Y8!5e0!3m2!1sru!2sam!4v1678996487495!5m2!1sru!2sam" width="100%" height="500" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+<form action="" id="contact">
+	<div class="forname">
+		<input type="text" placeholder="Name">
+		<input type="text" placeholder="Email">
+	</div>
+	<div class="formassage">
+	<input type="text" placeholder="Subject"> 
+	<input type="text" placeholder="Massage">
+	<button>Submit</button>
+	</div>
+</form>
+</div>
+
+<div class="forBottom">
+	<p>Copyright © 2023 Your Company . Designed by Arman Aleksanyan</p>
+</div>
+<script type="text/javascript" src="jquery.js"></script>
+<script type="text/javascript" src="script.js"></script>
+</body>
+</html>

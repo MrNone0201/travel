@@ -1,0 +1,3559 @@
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1; 
+}
+ 
+body::-webkit-scrollbar-thumb {
+  background: blue; 
+  border-radius:20px;
+  border: 3px solid white;
+  box-shadow: 1px 1px 1px black;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(yellow,lime,blue); 
+}
+
+@media only screen and  (min-width: 1201px){
+.navbar{
+	background-color: white !important;
+	display: flex;
+}
+	.logo{
+		width: 30%;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		.logo img{
+			width: 50px;
+			height: 50px;
+		}
+		.logo h1{
+			color: orange;
+		}
+	.menu{
+		border: 1px hidden;
+		width: 70%;
+		height: 50px;
+	}
+		.menu ul{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			font-size: 17px;
+			list-style-type: none;
+		}
+			.menu li{
+/*				width: 150px;*/
+				position: relative;
+				cursor: pointer;
+			}
+			li::before{
+				content:attr(data-text);
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 0;
+				bottom: 0;
+				opacity: 0;
+				z-index: 1;
+				transition: 0.6s;
+				border-right: 2px solid;
+				overflow: hidden;
+			}
+			li:hover:before{
+				width: 105%;
+				color: #61C9B6;
+				opacity: 1;
+			}
+		.phone_Menu{
+			display: none;
+		}
+.sectionOne{
+	width: 100%;
+	height: 670px;
+	background-image: url(Photos/Map.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+	.sectionOneMain{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+		.beginTravel{
+			width: 100%;
+			height: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+			.beginTravel h1{
+				text-transform: uppercase;
+				color: white;
+			}
+			.radio{
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: white;
+			}
+			.radio:nth-child(3){
+				width: 15px;
+				height: 15px;
+			}
+			.beginTravel h2{
+				color: gray;
+			}
+			.start{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+			}
+			.closeSelect{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				display: none;	
+			}
+		.selectMenu{
+			width: 100%;
+			height: 0;
+			opacity: 0;
+			pointer-events: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			pointer-events: none;
+		}
+			.selectForm{
+				width: 60%;
+				height: 60%;
+				background-color: white;
+				padding: 10px 10px;
+				box-sizing: border-box;
+			}
+				.selectInp{
+					width: 100%;
+					height: 50%;
+					display: flex;
+					justify-content: space-between;
+				}
+					.selectInp div{
+						display: flex;
+						flex-direction: column;
+					}
+						.choose{
+							width: 300px;
+							height: 30px;
+							border: none;
+							border-bottom: 2px solid;
+						}
+							.choose:hover{
+								border-bottom: 2px solid #61C9B6;
+							}
+						.selectInp select{
+							width: 100px;
+							text-align: center;
+							height: 30px;
+							border: none;
+							border-bottom: 2px solid;
+						} 
+							.selectInp select:hover{
+								border-bottom: 2px solid #61C9B6;
+							}
+				.selectInpTwo{
+					width: 100%;
+					height: 50%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+						.selectInpTwo div{
+							display: flex;
+							flex-direction: column;
+						}
+							.selectInpTwo div input{
+								width: 230px;
+								border: none;
+								border-bottom: 2px solid;
+								transition: 0.3s;
+							}
+								.selectInpTwo div input:hover{
+									border-bottom: 2px solid #61C9B6;
+								}
+							.selectInpTwo button{
+								border: 3px solid #61C9B6;
+								width: 380px;
+								height: 45px;
+								background-color: white;
+								color: #61C9B6;
+							}
+
+.sectionTwo{
+	border: 1px none	;
+	width: 100%;
+	height: 300px;
+	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	text-align: center;
+}
+	.sectionTwo p{
+		width: 60%;
+	}
+	.sectionTwo button{
+		width: 180px;
+		height: 40px;
+		background-color: #61C9B6;
+		color: white;
+		border: none;
+	}
+		.sectionTwo button:hover{
+			transition: 0.5s;
+			background-color: orange;
+		}
+
+#sectionThree{
+	width: 100%;
+	height: 100em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+	.row{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		position: relative;
+		padding: 0 40px;
+		box-sizing: border-box;
+	}
+			#photo{
+				width: 40%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+			}
+				#photo::-webkit-scrollbar{
+					width: 0;
+					height: 0;
+				}
+				#photo img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+								.toRight{
+									width: 40px;
+									height: 40px;
+									position: absolute;
+									left: -40px;
+									top: 50%;
+									background-color: rgba(0, 0, 0, 0.5);
+									z-index: 2;
+									cursor: pointer;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									font-size: 25px;
+								}
+									.toRight:hover{
+										background-color: rgba(0, 0, 0, 0.2);
+									}
+								.toLeft{
+									width: 40px;
+									height: 40px;
+									position: absolute;
+									left: -85px;
+									top: 50%;
+									background-color: rgba(0, 0, 0, 0.5);
+									cursor: pointer;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									font-size: 25px;
+								}
+									.toLeft:hover{
+										background-color: rgba(0, 0, 0, 0.2);
+									}
+				.text{
+				position: relative;
+					width: 700px;
+					height: 300px;
+					background-color: #61C9B6;
+					position: absolute;
+					left: 38%;
+					top: 10%;
+					padding: 20px 20px;
+					box-sizing: border-box;
+					color: white;
+				}
+
+  .rowTwo{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		flex-direction: row-reverse;
+		position: relative;
+		padding: 0 40px;
+		box-sizing: border-box;
+	}
+			#photoTwo{
+				width: 40%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+			}
+				#photoTwo::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photoTwo img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+						.toRightTwo{
+							width: 40px;
+							height: 40px;
+							position: absolute;
+							left: 107%;
+							top: 50%;
+							background-color: rgba(0, 0, 0, 0.5);
+							z-index: 2;
+							cursor: pointer;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 25px;
+						}
+							.toRightTwo:hover{
+									background-color: rgba(0, 0, 0, 0.2);
+							}
+						.toLeftTwo{
+							width: 40px;
+							height: 40px;
+							position: absolute;
+							left: 100%;
+							top: 50%;
+							background-color: rgba(0, 0, 0, 0.5);
+							cursor: pointer;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 25px;
+						}
+							.toLeftTwo:hover{
+									background-color: rgba(0, 0, 0, 0.2);
+							}
+				.textTwo{
+					width: 700px;
+					height: 300px;
+					background-color: #61C9B6;
+					position: absolute;
+					left: 15%;
+					top: 10%;
+					padding: 20px 20px;
+					box-sizing: border-box;
+					color: white;
+				}
+		.rowThree{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		position: relative;
+		padding: 0 40px;
+		box-sizing: border-box;
+	}
+			#photoThree{
+				width: 40%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+			}
+				#photoThree::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photoThree img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+						.toRightThree{
+							width: 40px;
+							height: 40px;
+							position: absolute;
+							left: -40px;
+							top: 50%;
+							background-color: rgba(0, 0, 0, 0.5);
+							z-index: 2;
+							cursor: pointer;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 25px;
+						}
+								.toRightThree:hover{
+									background-color: rgba(0, 0, 0, 0.2);
+							}
+						.toLeftThree{
+							width: 40px;
+							height: 40px;
+							position: absolute;
+							left: -85px;
+							top: 50%;
+							background-color: rgba(0, 0, 0, 0.5);
+							cursor: pointer;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 25px;
+						}
+								.toLeftThree:hover{
+									background-color: rgba(0, 0, 0, 0.2);
+							}
+				.textThree{
+					width: 700px;
+					height: 300px;
+					background-color: #61C9B6;
+					position: absolute;
+					left: 38%;
+					top: 10%;
+					padding: 20px 20px;
+					box-sizing: border-box;
+					color: white;
+				}
+.placesMenu{
+	width: 100%;
+	height: 150px;
+	background-color: #61C9B6;
+	display: flex;
+	justify-content: space-evenly;
+}
+	.photoMap{
+		border: 1px none white;
+		width: 9%;
+		height: 150px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		transition: 0.5s;
+		cursor: pointer;
+	}
+		.photoMap:hover{
+			background-color: lightblue;
+		}
+			.photoMap img{
+				width: 55%;
+				height: 50%;
+			}
+.sectionFour{
+	width: 100%;
+	height: 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+	
+
+		.forYerevan{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+			.forAragatsotn{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forArarat{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forArmavir{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forGegharkunik{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forKotayk{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forLori{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forShirak{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forSyunik{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forTavush{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forVayocDzor{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+
+				.rowDiv{
+					width: 100%;
+					height: 25%;
+					display: flex;
+				}
+					.photo{
+						width: 25%;
+						height: 100%;
+					}
+						.photo img{
+							width: 100%;
+							height: 100%;
+						}
+					.textDiv{
+						width: 50%;
+						height: 100%;
+						padding: 10px 30px;
+						box-sizing: border-box;
+					}
+					.buy{
+						width: 25%;
+						height: 80%;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						background-color: #61C9B6;
+						color: white;
+						aspect-ratio: 1.5;
+						background-image: url(https://templatemo.com/templates/templatemo_511_journey/img/button-curve.png);
+						background-repeat: no-repeat;
+						background-size: auto 100%;
+						transition: 0.5s;
+					}
+						.buy:hover{
+							background-color: orange;
+						}
+.forMap{
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+	#contact{
+		width: 450px;
+		height: 450px;
+		position: absolute;
+		right: 80px;
+		bottom: 30px;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+		.forname{
+			width: 100%;
+			height: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.formassage{
+			width: 100%;
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+			.forname input{
+				width: 40%;
+				height: 45px;
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+				.formassage input{
+					width: 80%;
+					height: 45px;
+					background-color: rgba(0, 0, 0, 0.2);
+				}
+					.formassage input:nth-child(2){
+						height: 190px;
+					}
+					.formassage button{
+						width: 80%;
+						height: 40px;
+						font-size: 20px;
+						background-color: #61C9B6;
+						color: white;
+					}
+.forBottom{
+	width: 100%;
+	height: 70px;
+	background-color: #61C9B6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.sectionOnePhone{
+	display: none;
+}
+.openPlacesMenu{
+	display: none;
+}
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:1025px)  and (max-width: 1200px){
+.navbar{
+	border: 1px hidden;
+	width: 100%;
+	height: 50px;
+	background-color: white !important;
+	display: flex;
+}
+	.logo{
+		border: 1px hidden;
+		width: 30%;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		.logo img{
+			width: 50px;
+			height: 50px;
+		}
+		.logo h1{
+			color: orange;
+		}
+	.menu{
+		border: 1px hidden;
+		width: 70%;
+		height: 50px;
+	}
+		.menu ul{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			font-size: 17px;
+			list-style-type: none;
+		}
+			.menu li{
+/*				width: 150px;*/
+				position: relative;
+				cursor: pointer;
+			}
+			li::before{
+				content:attr(data-text);
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 0;
+				bottom: 0;
+				opacity: 0;
+				z-index: 1;
+				transition: 0.6s;
+				border-right: 2px solid;
+				overflow: hidden;
+			}
+			li:hover:before{
+				width: 105%;
+				color: #61C9B6;
+				opacity: 1;
+			}
+		.phone_Menu{
+			display: none;
+		}
+
+.sectionOne{
+	width: 100%;
+	height: 670px;
+	background-image: url(Photos/Map.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+}
+	.sectionOneMain{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+		.beginTravel{
+			width: 100%;
+			height: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+			.beginTravel h1{
+				text-transform: uppercase;
+				color: white;
+			}
+			.radio{
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: white;
+			}
+			.radio:nth-child(3){
+				width: 15px;
+				height: 15px;
+			}
+			.beginTravel h2{
+				color: gray;
+			}
+			.start{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+			}
+			.closeSelect{
+				width: 50px;
+				height: 50px;
+				border-radius: 50%;
+				background-color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				display: none;	
+			}
+		.selectMenu{
+			width: 100%;
+			height: 0;
+			opacity: 0;
+			pointer-events: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+			.selectForm{
+				width: 70%;
+				height: 60%;
+				background-color: white;
+				padding: 10px 10px;
+				box-sizing: border-box;
+			}
+				.selectInp{
+					width: 100%;
+					height: 50%;
+					display: flex;
+					justify-content: space-between;
+				}
+					.selectInp div{
+						display: flex;
+						flex-direction: column;
+					}
+						.choose{
+							width: 200px;
+							height: 30px;
+							border: none;
+							border-bottom: 2px solid;
+						}
+							.choose:hover{
+								border-bottom: 2px solid #61C9B6;
+							}
+						.selectInp select{
+							width: 100px;
+							text-align: center;
+							height: 30px;
+							border: none;
+							border-bottom: 2px solid;
+						} 
+							.selectInp select:hover{
+								border-bottom: 2px solid #61C9B6;
+							}
+				.selectInpTwo{
+					width: 100%;
+					height: 50%;
+					display: flex;
+					justify-content: space-between;
+					align-items: center;
+				}
+						.selectInpTwo div{
+							display: flex;
+							flex-direction: column;
+						}
+							.selectInpTwo div input{
+								width: 230px;
+								border: none;
+								border-bottom: 2px solid;
+								transition: 0.3s;
+							}
+								.selectInpTwo div input:hover{
+									border-bottom: 2px solid #61C9B6;
+								}
+							.selectInpTwo button{
+								border: 3px solid #61C9B6;
+								width: 380px;
+								height: 45px;
+								background-color: white;
+								color: #61C9B6;
+							}
+
+.sectionTwo{
+	border: 1px none	;
+	width: 100%;
+	height: 300px;
+	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	text-align: center;
+}
+	.sectionTwo p{
+		width: 60%;
+	}
+	.sectionTwo button{
+		width: 180px;
+		height: 40px;
+		background-color: #61C9B6;
+		color: white;
+		border: none;
+	}
+		.sectionTwo button:hover{
+			transition: 0.5s;
+			background-color: orange;
+		}
+
+#sectionThree{
+	width: 100%;
+	height: 100em;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+}
+	.row{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		position: relative;
+		padding: 0 40px;
+		box-sizing: border-box;
+	}
+			#photo{
+				width: 40%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+			}
+				#photo::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photo img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+								.toRight{
+									width: 40px;
+									height: 40px;
+									position: absolute;
+									left: -40px;
+									top: 50%;
+									background-color: rgba(0, 0, 0, 0.5);
+									z-index: 2;
+									cursor: pointer;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									font-size: 25px;
+								}
+									.toRight:hover{
+										background-color: rgba(0, 0, 0, 0.2);
+									}
+								.toLeft{
+									width: 40px;
+									height: 40px;
+									position: absolute;
+									left: -85px;
+									top: 50%;
+									background-color: rgba(0, 0, 0, 0.5);
+									cursor: pointer;
+									display: flex;
+									justify-content: center;
+									align-items: center;
+									font-size: 25px;
+								}
+									.toLeft:hover{
+										background-color: rgba(0, 0, 0, 0.2);
+									}
+				.text{
+				position: relative;
+					width: 660px;
+					height: 300px;
+					background-color: #61C9B6;
+					position: absolute;
+					left: 38%;
+					top: 10%;
+					padding: 20px 20px;
+					box-sizing: border-box;
+					color: white;
+				}
+
+  .rowTwo{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		position: relative;
+		padding: 0 40px;
+		box-sizing: border-box;
+	}
+			#photoTwo{
+				width: 40%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+			}
+				#photoTwo::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photoTwo img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+						.toRightTwo{
+							width: 40px;
+							height: 40px;
+							position: absolute;
+							left: -40px;
+							top: 50%;
+							background-color: rgba(0, 0, 0, 0.5);
+							z-index: 2;
+							cursor: pointer;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 25px;
+						}
+							.toRightTwo:hover{
+									background-color: rgba(0, 0, 0, 0.2);
+							}
+						.toLeftTwo{
+							width: 40px;
+							height: 40px;
+							position: absolute;
+							left: -85px;
+							top: 50%;
+							background-color: rgba(0, 0, 0, 0.5);
+							cursor: pointer;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 25px;
+						}
+							.toLeftTwo:hover{
+									background-color: rgba(0, 0, 0, 0.2);
+							}
+				.textTwo{
+					width: 650px;
+					height: 300px;
+					background-color: #61C9B6;
+					position: absolute;
+					left: 38%;
+					top: 10%;
+					padding: 20px 20px;
+					box-sizing: border-box;
+					color: white;
+				}
+		.rowThree{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		position: relative;
+		padding: 0 40px;
+		box-sizing: border-box;
+	}
+			#photoThree{
+				width: 40%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+			}
+				#photoThree::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photoThree img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+						.toRightThree{
+							width: 40px;
+							height: 40px;
+							position: absolute;
+							left: -40px;
+							top: 50%;
+							background-color: rgba(0, 0, 0, 0.5);
+							z-index: 2;
+							cursor: pointer;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 25px;
+						}
+								.toRightThree:hover{
+									background-color: rgba(0, 0, 0, 0.2);
+							}
+						.toLeftThree{
+							width: 40px;
+							height: 40px;
+							position: absolute;
+							left: -85px;
+							top: 50%;
+							background-color: rgba(0, 0, 0, 0.5);
+							cursor: pointer;
+							display: flex;
+							justify-content: center;
+							align-items: center;
+							font-size: 25px;
+						}
+								.toLeftThree:hover{
+									background-color: rgba(0, 0, 0, 0.2);
+							}
+				.textThree{
+					width: 650px;
+					height: 300px;
+					background-color: #61C9B6;
+					position: absolute;
+					left: 38%;
+					top: 10%;
+					padding: 20px 20px;
+					box-sizing: border-box;
+					color: white;
+				}
+.placesMenu{
+	width: 100%;
+	height: 150px;
+	background-color: #61C9B6;
+	display: flex;
+	justify-content: space-evenly;
+}
+	.photoMap{
+		border: 1px none white;
+		width: 9%;
+		height: 150px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		transition: 0.5s;
+		cursor: pointer;
+	}
+		.photoMap:hover{
+			background-color: lightblue;
+		}
+			.photoMap img{
+				width: 57%;
+				height: 50%;
+			}
+.sectionFour{
+	width: 100%;
+	height: 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+	
+
+		.forYerevan{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+			.forAragatsotn{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forArarat{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forArmavir{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forGegharkunik{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forKotayk{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forLori{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forShirak{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forSyunik{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forTavush{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forVayocDzor{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+
+				.rowDiv{
+					width: 100%;
+					height: 25%;
+					display: flex;
+				}
+					.photo{
+						width: 25%;
+						height: 100%;
+					}
+						.photo img{
+							width: 100%;
+							height: 100%;
+						}
+					.textDiv{
+						width: 50%;
+						height: 100%;
+						padding: 10px 30px;
+						box-sizing: border-box;
+					}
+					.buy{
+						width: 25%;
+						height: 80%;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						background-color: #61C9B6;
+						color: white;
+						aspect-ratio: 1.5;
+						background-image: url(https://templatemo.com/templates/templatemo_511_journey/img/button-curve.png);
+						background-repeat: no-repeat;
+						background-size: auto 100%;
+						transition: 0.5s;
+					}
+						.buy:hover{
+							background-color: orange;
+						}
+
+	.forMap{
+	width: 100%;
+	height: 500px;
+	position: relative;
+}
+	#contact{
+		width: 450px;
+		height: 450px;
+		position: absolute;
+		right: 80px;
+		bottom: 30px;
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+		.forname{
+			width: 100%;
+			height: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.formassage{
+			width: 100%;
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+			.forname input{
+				width: 40%;
+				height: 45px;
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+				.formassage input{
+					width: 80%;
+					height: 45px;
+					background-color: rgba(0, 0, 0, 0.2);
+				}
+					.formassage input:nth-child(2){
+						height: 190px;
+					}
+					.formassage button{
+						width: 80%;
+						height: 40px;
+						font-size: 20px;
+						background-color: #61C9B6;
+						color: white;
+					}
+.forBottom{
+	width: 100%;
+	height: 70px;
+	background-color: #61C9B6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+
+.sectionOnePhone{
+	display: none;
+}
+.openPlacesMenu{
+	display: none;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:769px)  and (max-width: 1024px){
+.navbar{
+	border: 1px hidden;
+	width: 100%;
+	height: 50px;
+	background-color: white !important;
+	display: flex;
+}
+	.logo{
+		border: 1px hidden;
+		width: 30%;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		.logo img{
+			width: 50px;
+			height: 50px;
+		}
+		.logo h1{
+			color: orange;
+		}
+	.menu{
+		border: 1px hidden;
+		width: 70%;
+		height: 50px;
+	}
+		.menu ul{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			justify-content: space-evenly;
+			align-items: center;
+			font-size: 17px;
+			list-style-type: none;
+		}
+			.menu li{
+/*				width: 150px;*/
+				position: relative;
+				cursor: pointer;
+			}
+			li::before{
+				content:attr(data-text);
+				position: absolute;
+				top: 0;
+				left: 0;
+				width: 0;
+				bottom: 0;
+				opacity: 0;
+				z-index: 1;
+				transition: 0.6s;
+				border-right: 2px solid;
+				overflow: hidden;
+			}
+			li:hover:before{
+				width: 105%;
+				color: #61C9B6;
+				opacity: 1;
+			}
+		.phone_Menu{
+			display: none;
+		}
+
+.sectionOne{
+	display: none;
+}
+
+.sectionOnePhone{
+	width: 100%;
+	height: 500px;
+	background-image: url(Photos/Map.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+	.sectionOneMainPhone{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+		.beginTravelPhone{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			gap: 10px;
+			justify-content: center;
+			align-items: center;
+		}
+			.beginTravelPhone h1{
+				text-transform: uppercase;
+				color: white;
+			}
+			.radioPhone{
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: white;
+			}
+			.radioPhone:nth-child(3){
+				width: 15px;
+				height: 15px;
+			}
+			.beginTravelPhone h2{
+				color: gray;
+			}
+			.startPhone{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+			}
+			.closeSelectPhone{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				display: none;
+				position: absolute;
+				right: 10px;
+				top: 10px;	
+				z-index: 2;
+			}
+		.selectMenuPhone{
+			width: 100%;
+			height: 0;
+			opacity: 0;
+			pointer-events: 0;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+			.selectFormPhone{
+				width: 100%;
+				height: 100%;
+				background-color: white;
+				padding: 10px 10px;
+				box-sizing: border-box;
+			}
+				.selectInpPhone{
+					width: 100%;
+					height: 50%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+				}
+					.selectInpPhone div{
+						display: flex;
+						justify-content: center;
+						flex-direction: column;
+					}
+						.choosePhone{
+							width: 100%;
+							height: 30px;
+							border: none;
+							border-bottom: 2px solid;
+						}
+							.choosePhone:hover{
+								border-bottom: 2px solid #61C9B6;
+							}
+						.selectInpPhone select{
+							width: 100px;
+							text-align: center;
+							height: 30px;
+							border: none;
+							border-bottom: 2px solid;
+						} 
+							.selectInpPhone select:hover{
+								border-bottom: 2px solid #61C9B6;
+							}
+				.selectInpTwoPhone{
+					width: 100%;
+					height: 50%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+				}
+						.selectInpTwoPhone div{
+							display: flex;
+							justify-content: center;
+							flex-direction: column;
+						}
+							.selectInpTwoPhone div input{
+								width: 230px;
+								border: none;
+								border-bottom: 2px solid;
+								transition: 0.3s;
+							}
+								.selectInpTwoPhone div input:hover{
+									border-bottom: 2px solid #61C9B6;
+								}
+							.selectInpTwoPhone button{
+								border: 3px solid #61C9B6;
+								width: 100%;
+								height: 45px;
+								background-color: white;
+								color: #61C9B6;
+							}
+
+.sectionTwo{
+	border: 1px none	;
+	width: 100%;
+	height: 300px;
+	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	text-align: center;
+}
+	.sectionTwo p{
+		width: 70%;
+	}
+	.sectionTwo button{
+		width: 180px;
+		height: 40px;
+		background-color: #61C9B6;
+		color: white;
+		border: none;
+	}
+		.sectionTwo button:hover{
+			transition: 0.5s;
+			background-color: orange;
+		}
+
+#sectionThree{
+	width: 100%;
+	height: 100em;
+	padding: 0 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction	: column;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-evenly;
+}
+	.row{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+			#photo{
+				width: 60%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+			}
+				#photo::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photo img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+								.toRight{
+									display: none;
+								}
+								.toLeft{
+									display: none;
+								}
+				.text{
+					position: relative;
+					width: 40%;
+					height: 100%;
+					background-color: #61C9B6;
+					padding: 10px 10px;
+					box-sizing: border-box;
+					color: white;
+				}
+
+  .rowTwo{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+			#photoTwo{
+				width: 60%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+			}
+				#photoTwo::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photoTwo img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+						.toRightTwo{
+							display: none;
+						}
+						.toLeftTwo{
+							display: none;
+						}
+				.textTwo{
+					width: 40%;
+					height: 100%;
+					background-color: #61C9B6;
+					padding: 10px 10px;
+					box-sizing: border-box;
+					color: white;
+				}
+		.rowThree{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+			#photoThree{
+				width: 60%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+			}
+				#photoThree::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photoThree img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+						.toRightThree{
+							display: none;
+						}
+						.toLeftThree{
+							display: none;
+						}
+				.textThree{
+					width: 40%;
+					height: 100%;
+					background-color: #61C9B6;
+					padding: 10px 10px;
+					box-sizing: border-box;
+					color: white;
+				}
+
+.placesMenu{
+	width: 0;
+	height: 1000px;
+	background-color: #61C9B6;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	position: absolute;
+	z-index: 2;
+	opacity: 0;
+	pointer-events: none;
+	overflow-y: scroll;
+
+}
+		.openPlacesMenu{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 20%;
+			left: 0;
+			background-color: #61C9B6;
+			border-bottom-right-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+	.photoMap{
+		width: 100%;
+		height: 150px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		transition: 0.5s;
+		cursor: pointer;
+	}
+		.photoMap:hover{
+			background-color: lightblue;
+		}
+			.photoMap img{
+				width: 50px;
+			}
+.sectionFour{
+	width: 100%;
+	height: 1000px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+	
+
+		.forYerevan{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+			.forAragatsotn{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forArarat{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forArmavir{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forGegharkunik{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forKotayk{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forLori{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forShirak{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forSyunik{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forTavush{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forVayocDzor{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+
+				.rowDiv{
+					width: 100%;
+					height: 25%;
+					display: flex;
+				}
+					.photo{
+						width: 25%;
+						height: 100%;
+					}
+						.photo img{
+							width: 100%;
+							height: 100%;
+						}
+					.textDiv{
+						width: 50%;
+						height: 100%;
+						padding: 10px 30px;
+						box-sizing: border-box;
+					}
+					.buy{
+						width: 25%;
+						height: 80%;
+						display: flex;
+						flex-direction: column;
+						justify-content: center;
+						align-items: center;
+						box-sizing: border-box;
+						background-color: #61C9B6;
+						color: white;
+						aspect-ratio: 1.5;
+						background-image: url(https://templatemo.com/templates/templatemo_511_journey/img/button-curve.png);
+						background-repeat: no-repeat;
+						background-size: auto 100%;
+						transition: 0.5s;
+					}
+						.buy:hover{
+							background-color: orange;
+						}
+.forMap{
+	width: 100%;
+	height: 950px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+	#contact{
+		width: 450px;
+		height: 450px;
+		box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+		.forname{
+			width: 100%;
+			height: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.formassage{
+			width: 100%;
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+			.forname input{
+				width: 40%;
+				height: 45px;
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+				.formassage input{
+					width: 80%;
+					height: 45px;
+					background-color: rgba(0, 0, 0, 0.2);
+				}
+					.formassage input:nth-child(2){
+						height: 190px;
+					}
+					.formassage button{
+						width: 80%;
+						height: 40px;
+						font-size: 20px;
+						background-color: #61C9B6;
+						color: white;
+					}
+.forBottom{
+	width: 100%;
+	height: 70px;
+	background-color: #61C9B6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:481px)  and (max-width: 768px){
+.navbar{
+	border: 1px hidden;
+	width: 100%;
+	height: 50px;
+	background-color: white !important;
+	display: flex;
+}
+	.logo{
+		border: 1px hidden;
+		width: 90%;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		.logo img{
+			width: 50px;
+			height: 50px;
+		}
+		.logo h1{
+			color: orange;
+		}
+	.menu{
+		display: none;
+	}
+	.phone_Menu{
+		border: 1px hidden;
+		width: 10%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		.phone_Menu span{
+			font-size: 25px;
+		}
+			#menu_Phone{
+				border: 1px hidden;
+				position: absolute;
+				width: 100%;
+				height:0;
+				opacity: 0;
+				pointer-events: none;
+				display: flex;
+				left: 0;
+				top: 50px;
+				flex-direction: column;
+				justify-content: space-evenly;
+				align-items: center;
+				font-size: 17px;
+				background-color: white;
+				z-index: 1;
+				list-style-type: none;
+			}
+
+				#menu_Phone li{
+/*				width: 150px;*/
+				position: relative;
+				}
+					#menu_Phone li::before{
+						content:attr(data-text);
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 0;
+						bottom: 0;
+						opacity: 0;
+						z-index: 1;
+						transition: 0.6s;
+						border-right: 2px solid;
+						overflow: hidden;
+					}
+					#menu_Phone li:hover:before{
+						width: 105%;
+						color: #61C9B6;
+						opacity: 1;
+					}
+
+.sectionOne{
+	display: none;
+}
+
+.sectionOnePhone{
+	width: 100%;
+	height: 320px;
+	background-image: url(Photos/Map.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+	.sectionOneMainPhone{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+		.beginTravelPhone{
+			width: 100%;
+			height: 50%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+			.beginTravelPhone h1{
+				text-transform: uppercase;
+				color: white;
+			}
+			.radioPhone{
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: white;
+			}
+			.radioPhone:nth-child(3){
+				width: 15px;
+				height: 15px;
+			}
+			.beginTravelPhone h2{
+				color: gray;
+			}
+			.startPhone{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+			}
+			.closeSelectPhone{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				position: absolute;
+				right: 10px;
+				top: 10px;
+				display: none;	
+				z-index: 2;
+			}
+		.selectMenuPhone{
+			width: 100%;
+			height: 0;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+		}
+			.selectFormPhone{
+				width: 100%;
+				height: 100%;
+				background-color: white;
+				padding: 10px 10px;
+				box-sizing: border-box;
+			}
+				.selectInpPhone{
+					width: 100%;
+					height: 50%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+				}
+					.selectInpPhone div{
+						display: flex;
+						justify-content: center;
+/*						flex-direction: column;*/
+					}
+						.choosePhone{
+							width: 100%;
+							height: 30px;
+							border: none;
+							border-bottom: 2px solid;
+						}
+							.choosePhone:hover{
+								border-bottom: 2px solid #61C9B6;
+							}
+						.selectInpPhone select{
+							width: 100px;
+							text-align: center;
+							height: 30px;
+							border: none;
+							border-bottom: 2px solid;
+						} 
+							.selectInpPhone select:hover{
+								border-bottom: 2px solid #61C9B6;
+							}
+				.selectInpTwoPhone{
+					width: 100%;
+					height: 50%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+				}
+						.selectInpTwoPhone div{
+							display: flex;
+							justify-content: center;
+							flex-direction: column;
+						}
+							.selectInpTwoPhone div input{
+								width: 230px;
+								border: none;
+								border-bottom: 2px solid;
+								transition: 0.3s;
+							}
+								.selectInpTwoPhone div input:hover{
+									border-bottom: 2px solid #61C9B6;
+								}
+							.selectInpTwoPhone button{
+								border: 3px solid #61C9B6;
+								width: 100%;
+								height: 45px;
+								background-color: white;
+								color: #61C9B6;
+							}
+.sectionTwo{
+	border: 1px none	;
+	width: 100%;
+	height: 320px;
+	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	text-align: center;
+}
+	.sectionTwo p{
+		width: 80%;
+	}
+	.sectionTwo button{
+		width: 180px;
+		height: 40px;
+		background-color: #61C9B6;
+		color: white;
+		border: none;
+	}
+		.sectionTwo button:hover{
+			transition: 0.5s;
+			background-color: orange;
+		}
+
+#sectionThree{
+	width: 100%;
+	height: 150em;
+	padding: 0 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction	: column;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-evenly;
+}
+	.row{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		flex-direction:column ;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+			#photo{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+			}
+				#photo::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photo img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+								.toRight{
+									display: none;
+								}
+								.toLeft{
+									display: none;
+								}
+				.text{
+					position: relative;
+					width: 100%;
+					height: 300px;
+					background-color: #61C9B6;
+					padding: 10px 10px;
+					box-sizing: border-box;
+					color: white;
+				}
+
+  .rowTwo{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		flex-direction: column;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+			#photoTwo{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+			}
+				#photoTwo::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photoTwo img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+						.toRightTwo{
+							display: none;
+						}
+						.toLeftTwo{
+							display: none;
+						}
+				.textTwo{
+					width: 100%;
+					height: 300px;
+					background-color: #61C9B6;
+					padding: 10px 10px;
+					box-sizing: border-box;
+					color: white;
+				}
+		.rowThree{
+		width: 100%;
+		height: 30%;
+		display: flex;
+		flex-direction: column;
+		padding: 0 10px;
+		box-sizing: border-box;
+	}
+			#photoThree{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+			}
+				#photoThree::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photoThree img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+						.toRightThree{
+							display: none;
+						}
+						.toLeftThree{
+							display: none;
+						}
+				.textThree{
+					width: 100%;
+					height: 300px;
+					background-color: #61C9B6;
+					padding: 10px 10px;
+					box-sizing: border-box;
+					color: white;
+				}
+.placesMenu{
+	width: 0;
+	height: 1100px;
+	background-color: #61C9B6;
+	display: flex;
+	flex-direction: column;
+	position: absolute;
+	z-index: 2;
+	opacity: 0;
+	pointer-events: none;
+
+}
+		.openPlacesMenu{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #61C9B6;
+			border-bottom-right-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+	.photoMap{
+		width: 100%;
+		height: 150px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		transition: 0.5s;
+		cursor: pointer;
+	}
+		.photoMap:hover{
+			background-color: lightblue;
+		}
+			.photoMap img{
+				width: 60px;
+			}
+.sectionFour{
+	width: 100%;
+	height: 2100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+	
+
+		.forYerevan{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			justify-content: space-evenly;
+			display: none;
+		}
+			.forAragatsotn{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forArarat{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forArmavir{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forGegharkunik{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forKotayk{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forLori{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forShirak{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forSyunik{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forTavush{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forVayocDzor{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+				.rowDiv{
+					width: 100%;
+					height: 500px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					border-bottom: 2px solid gray;
+				}
+					.photo{
+						width: 50%;
+						height: 100%;
+					}
+						.photo img{
+							width: 100%;
+							height: 100%;
+						}
+					.textDiv{
+						width: 100%;
+						height: 100%;
+						padding: 10px 30px;
+						box-sizing: border-box;
+					}
+					.buy{
+						width: 50%;
+						height: 45px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						background-color: #61C9B6;
+						color: white;
+						aspect-ratio: 1.5;
+						font-size: 18px;
+					}
+.forMap{
+	width: 100%;
+	height: 950px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+	#contact{
+		width: 450px;
+		height: 450px;
+		box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+		.forname{
+			width: 100%;
+			height: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.formassage{
+			width: 100%;
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+			.forname input{
+				width: 40%;
+				height: 45px;
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+				.formassage input{
+					width: 80%;
+					height: 45px;
+					background-color: rgba(0, 0, 0, 0.2);
+				}
+					.formassage input:nth-child(2){
+						height: 190px;
+					}
+					.formassage button{
+						width: 80%;
+						height: 40px;
+						font-size: 20px;
+						background-color: #61C9B6;
+						color: white;
+					}
+.forMap{
+	width: 100%;
+	height: 950px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+	#contact{
+		width: 450px;
+		height: 450px;
+		box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+		background-color: white;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		justify-content: space-evenly;
+	}
+		.forname{
+			width: 100%;
+			height: 20%;
+			display: flex;
+			justify-content: center;
+			align-items: center;
+		}
+		.formassage{
+			width: 100%;
+			height: 80%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+			.forname input{
+				width: 40%;
+				height: 45px;
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+				.formassage input{
+					width: 80%;
+					height: 45px;
+					background-color: rgba(0, 0, 0, 0.2);
+				}
+					.formassage input:nth-child(2){
+						height: 190px;
+					}
+					.formassage button{
+						width: 80%;
+						height: 40px;
+						font-size: 20px;
+						background-color: #61C9B6;
+						color: white;
+					}
+.forBottom{
+	width: 100%;
+	height: 70px;
+	background-color: #61C9B6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (min-width:320px)  and (max-width: 480px){
+.navbar{
+	border: 1px hidden;
+	width: 100%;
+	height: 50px;
+	background-color: white !important;
+	display: flex;
+}
+	.logo{
+		border: 1px hidden;
+		width: 90%;
+		height: 50px;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		.logo img{
+			width: 50px;
+			height: 50px;
+		}
+		.logo h1{
+			color: orange;
+		}
+	.menu{
+		display: none;
+	}
+	.phone_Menu{
+		border: 1px hidden;
+		width: 10%;
+		height: 100%;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
+		.phone_Menu span{
+			font-size: 25px;
+		}
+			#menu_Phone{
+				border: 1px hidden;
+				position: absolute;
+				width: 100%;
+				height:0;
+				opacity: 0;
+				pointer-events: none;
+				display: flex;
+				flex-direction: column;
+				top: 0;
+				right: 0;
+				top: 50px;
+				justify-content: space-evenly;
+				font-size: 17px;
+				background-color: white;
+				z-index: 9999;
+				list-style-type: none;
+			}
+
+				#menu_Phone li{
+/*				width: 150px;*/
+				position: relative;
+				}
+					#menu_Phone li::before{
+						content:attr(data-text);
+						position: absolute;
+						top: 0;
+						left: 0;
+						width: 0;
+						bottom: 0;
+						opacity: 0;
+						z-index: 1;
+						transition: 0.6s;
+						border-right: 2px solid;
+						overflow: hidden;
+					}
+					#menu_Phone li:hover:before{
+						width: 105%;
+						color: #61C9B6;
+						opacity: 1;
+					}
+
+.sectionOne{
+	display: none;
+}
+
+.sectionOnePhone{
+	width: 100%;
+	height: 200px;
+	background-image: url(Photos/Map.jpeg);
+	background-repeat: no-repeat;
+	background-size: 100%;
+	position: relative;
+}
+	.sectionOneMainPhone{
+		width: 100%;
+		height: 100%;
+		background-color: rgba(0, 0, 0, 0.5);
+	}
+		.beginTravelPhone{
+			width: 100%;
+			height: 100%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+			.beginTravelPhone h1{
+				text-transform: uppercase;
+				color: white;
+				font-size: 20px;
+			}
+			.radioPhone{
+				width: 10px;
+				height: 10px;
+				border-radius: 50%;
+				background-color: white;
+				display: none;
+			}
+			.radioPhone:nth-child(3){
+				width: 15px;
+				height: 15px;
+			}
+			.beginTravelPhone h2{
+				color: gray;
+				font-size: 18px;
+			}
+			.startPhone{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+			}
+			.closeSelectPhone{
+				width: 40px;
+				height: 40px;
+				border-radius: 50%;
+				background-color: white;
+				display: flex;
+				justify-content: center;
+				align-items: center;
+				cursor: pointer;
+				position: absolute;
+				right: 5px;
+				top: 10px;
+				display: none;	
+				z-index: 2;
+				position: fixed;
+			}
+		.selectMenuPhone{
+			width: 100%;
+			height: 0;
+			opacity: 0;
+			position: absolute;
+			top: 0;
+			left: 0;
+			z-index: 1;
+		}
+			.selectFormPhone{
+				width: 100%;
+				height: 100%;
+				background-color: white;
+				padding: 10px 30px;
+				padding-right: 50px;
+				box-sizing: border-box;
+				position: fixed;
+				pointer-events: none;
+				top: 0;
+			}
+				.selectInpPhone{
+					width: 100%;
+					height: 50%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-evenly;
+				}
+					.selectInpPhone div{
+						display: flex;
+						justify-content: center;
+/*						flex-direction: column;*/
+					}
+						.choosePhone{
+							width: 80%;
+							height: 30px;
+							border: none;
+							border-bottom: 2px solid;
+						}
+							.choosePhone:hover{
+								border-bottom: 2px solid #61C9B6;
+							}
+						.selectInpPhone select{
+							width: 100px;
+							text-align: center;
+							height: 30px;
+							border: none;
+							border-bottom: 2px solid;
+						} 
+							.selectInpPhone select:hover{
+								border-bottom: 2px solid #61C9B6;
+							}
+				.selectInpTwoPhone{
+					width: 100%;
+					height: 50%;
+					display: flex;
+					flex-direction: column;
+					justify-content: space-between;
+					align-items: center;
+				}
+						.selectInpTwoPhone div{
+							display: flex;
+							justify-content: center;
+							flex-direction: column;
+						}
+							.selectInpTwoPhone div input{
+								width: 230px;
+								border: none;
+								border-bottom: 2px solid;
+								transition: 0.3s;
+							}
+								.selectInpTwoPhone div input:hover{
+									border-bottom: 2px solid #61C9B6;
+								}
+							.selectInpTwoPhone button{
+								border: 3px solid #61C9B6;
+								width: 100%;
+								height: 45px;
+								background-color: white;
+								color: #61C9B6;
+							}
+
+.sectionTwo{
+	border: 1px none	;
+	width: 100%;
+	height: 370px;
+	background-color: lightgray;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	gap: 20px;
+	text-align: center;
+	overflow-x: scroll;
+}
+	.sectionTwo h1{
+		font-size: 25px;
+	}
+	.sectionTwo p{
+		width: 80%;
+	}
+	.sectionTwo button{
+		width: 180px;
+		height: 40px;
+		background-color: #61C9B6;
+		color: white;
+		border: none;
+	}
+		.sectionTwo button:hover{
+			transition: 0.5s;
+			background-color: orange;
+		}
+
+#sectionThree{
+	width: 100%;
+	height: 90em;
+	padding: 0 20px;
+	box-sizing: border-box;
+	display: flex;
+	flex-direction	: column;
+	justify-content: center;
+	align-items: center;
+	justify-content: space-evenly;
+}
+	.row{
+		width: 100%;
+		height: 20%;
+		display: flex;
+		flex-direction:column ;
+		padding: 0 10px;
+		box-sizing: border-box;
+		position: relative;
+	}
+			#photo{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+				z-index: 1;
+			}
+				#photo::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photo img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+								.toRight{
+									display: none;
+								}
+								.toLeft{
+									display: none;
+								}
+				.text{
+					position: relative;
+					width: 93%;
+					height: 300px;
+					background-color: #61C9B6;
+					padding: 0 10px;
+					box-sizing: border-box;
+					color: white;
+					position: absolute;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					top: -40px;
+					z-index: 0;
+					text-align: center;
+				}
+					.text h1{
+						font-size: 18px;
+					}
+						.text:hover{
+							animation-name: openText;
+							animation-duration: 3s;
+							animation-fill-mode: both;
+						}
+							@keyframes openText{
+								0%{
+									top: -40px;
+								}
+								50%{
+									top: -250px;
+									transform: rotate(45deg);
+								}
+								100%{
+									z-index: 2;
+									top: -40px;
+								}
+
+							}
+
+  .rowTwo{
+		width: 100%;
+		height: 20%;
+		display: flex;
+		flex-direction: column;
+		padding: 0 10px;
+		box-sizing: border-box;
+		position: relative;
+	}
+			#photoTwo{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+				z-index: 1;
+			}
+				#photoTwo::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photoTwo img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+						.toRightTwo{
+							display: none;
+						}
+						.toLeftTwo{
+							display: none;
+						}
+				.textTwo{
+					width: 92%;
+					height: 300px;
+					background-color: #61C9B6;
+					padding: 0 10px;
+					box-sizing: border-box;
+					color: white;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					position: absolute;
+					z-index: 0;
+					top: -40px;
+				}
+					.textTwo h1{
+						font-size: 20px;
+					}
+							.textTwo:hover{
+							animation-name: openTextTwo;
+							animation-duration: 3s;
+							animation-fill-mode: both;
+						}
+							@keyframes openTextTwo{
+								0%{
+									top: -40px;
+								}
+								50%{
+									top: -250px;
+									transform: rotate(45deg);
+								}
+								100%{
+									z-index: 2;
+									top: -40px;
+								}
+
+							}
+		.rowThree{
+		width: 100%;
+		height: 20%;
+		display: flex;
+		flex-direction: column;
+		padding: 0 10px;
+		box-sizing: border-box;
+		position: relative;
+	}
+			#photoThree{
+				width: 100%;
+				height: 100%;
+				display: flex;
+				overflow-x: scroll;
+				scroll-snap-type: x mandatory ;
+				z-index: 1;
+			}
+				#photoThree::-webkit-scrollbar{
+					width: 0 !important;
+				}
+				#photoThree img{
+					width: 100%;
+					height: 100%;
+					flex: 0 0  100%;
+					scroll-snap-align: start;
+				}
+						.toRightThree{
+							display: none;
+						}
+						.toLeftThree{
+							display: none;
+						}
+				.textThree{
+					width: 92%;
+					height: 300px;
+					background-color: #61C9B6;
+					padding: 0 10px;
+					box-sizing: border-box;
+					color: white;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					text-align: center;
+					position: absolute;
+					top: -40px;
+					z-index: 0;
+				}
+					.textThree h1{
+						font-size: 20px;
+					}
+							.textThree:hover{
+							animation-name: openTextThree;
+							animation-duration: 3s;
+							animation-fill-mode: both;
+						}
+							@keyframes openTextThree{
+								0%{
+									top: -40px;
+								}
+								50%{
+									top: -250px;
+									transform: rotate(45deg);
+								}
+								100%{
+									z-index: 2;
+									top: -40px;
+								}
+
+							}
+.placesMenu{
+	width: 0;
+	height: 1000px;
+	background-color: #61C9B6;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-evenly;
+	position: absolute;
+	z-index: 2;
+	opacity: 0;
+	pointer-events: none;
+
+}
+		.openPlacesMenu{
+			width: 50px;
+			height: 50px;
+			position: absolute;
+			top: 0;
+			left: 0;
+			background-color: #61C9B6;
+			border-bottom-right-radius: 20px;
+			border-top-right-radius: 20px;
+		}
+	.photoMap{
+		width: 100%;
+		height: 150px;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		color: white;
+		transition: 0.5s;
+		cursor: pointer;
+	}
+		.photoMap:hover{
+			background-color: lightblue;
+		}
+			.photoMap img{
+				width: 50px;
+			}
+.sectionFour{
+	width: 100%;
+	height: 2100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	position: relative;
+}
+
+	
+
+		.forYerevan{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			justify-content: center;
+			justify-content: space-evenly;
+			display: none;
+		}
+			.forAragatsotn{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forArarat{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forArmavir{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forGegharkunik{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forKotayk{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forLori{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forShirak{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forSyunik{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forTavush{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+		.forVayocDzor{
+			width: 80%;
+			height: 95%;
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+			display: none;
+		}
+				.rowDiv{
+					width: 100%;
+					height: 500px;
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+					border-bottom: 2px solid gray;
+				}
+					.photo{
+						width: 50%;
+						height: 100%;
+					}
+						.photo img{
+							width: 100%;
+							height: 100%;
+						}
+					.textDiv{
+						width: 100%;
+						height: 100%;
+						padding: 10px 30px;
+						box-sizing: border-box;
+					}
+						.textDiv h1{
+							font-size: 20px;
+						}
+					.buy{
+						width: 50%;
+						height: 45px;
+						display: flex;
+						justify-content: center;
+						align-items: center;
+						background-color: #61C9B6;
+						color: white;
+						aspect-ratio: 1.5;
+					}
+						.buy h1{
+							font-size: 18px;
+						}
+						.buy h2{
+							font-size: 16px;
+						}
+
+.forMap{
+	width: 100%;
+	height: 950px;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+	#contact{
+		width: 100%;
+		height: 450px;
+		box-shadow: 3px 3px 3px 3px rgba(0, 0, 0, 0.2);
+		background-color: white;
+	}
+		.forname{
+			width: 100%;
+			height: 35%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			justify-content: space-evenly;
+			align-items: center;
+		}
+		.formassage{
+			width: 100%;
+			height: 45%;
+			display: flex;
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+			justify-content: space-evenly;
+		}
+
+			.forname input{
+				width: 80%;
+				height: 40px;
+				background-color: rgba(0, 0, 0, 0.2);
+			}
+				.formassage input{
+					width: 80%;
+					height: 40px;
+					background-color: rgba(0, 0, 0, 0.2);
+				}
+					.formassage input:nth-child(2){
+						height: 100px;
+					}
+					.formassage button{
+						width: 80%;
+						height: 40px;
+						font-size: 20px;
+						background-color: #61C9B6;
+						color: white;
+					}
+.forBottom{
+	width: 100%;
+	height: 70px;
+	background-color: #61C9B6;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	color: white;
+	padding: 0 30px;
+	box-sizing: border-box;
+	text-align: center;
+}
+}
